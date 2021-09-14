@@ -1,0 +1,135 @@
+<!--DOCTYPE html-->
+<html> <head> <meta charset="UTF-8"> </head>
+<body>
+
+<h2>
+<FONT FACE ="ARIAL"SIZE=20 COLOR="black"><p align="left">
+<marquee scrollamount="20" bgcolor="yellow" height="40" direction="left" loop ="">
+Kids Educator ** Java MCQ Practice lesson (1) ** We offers Online / Offline Computer Application , Computer Science Coaching ** Mob 9830402885 ** Special Class for Basic , Java , Python, C++ ,Java Script ... **  Physics , Chemistry Practical class At Science Lab ** Mob 9830402885 ** Learn & Practice Swimming at Mini Pool ** Mob 9830402885** </marquee>
+</p></font></h2>
+
+<script>
+let n=0;let j=0;
+const fruits =[["In object oriented programming the stress is given on:"," procedure "," methods "," class  "," data " ,"4"],
+["Which of these cannot be used for a variable name in Java"," identifier"," keyword "," identifier & keyword "," none of the mentioned ","2"],
+["The process of combining data and functions that<br>enables them to be together as a single entity is called","inheritance ","encapsulation  ","classification ","attributes" ,"2"],
+["The process by which a class acquires the properties from another class is called:","polymorphism ","inheritance ","abstraction ","object" ,"2"],
+["In procedural programming- the stress is laid on:","class ","function  ","data ","object" ,"2"],
+["A ............... is a set of objects that has common attributes and common behavior.","abstraction ","encapsulation ","class ","function ","3"],
+["Which of the following is not an object oriented programming language?","C++ ","Simula ","BASIC  ","Java" ,"3"],
+["A constant which gives the exact representation of data is called","Variable","Literal","Identifier","Character ","2"],
+["A word used in a high level language which has a special meaning attached to it is called","Class	","Identifier","Keyword ","Literal","3"],
+["A character literal is assigned to a:","Char variable 	","Char type literal ","String variable	","String literal","1"],
+["A character literal is enclosed in:", "''","\"\"","::","{ }","1"],
+["A set of characters is assigned to:","String variable ","Static variable","Boolean variable	","None","1"],
+["The ASCII codes of upper case alphabets range from:","65 - 90 ","60 – 85","65 – 91","97 - 122","1"],
+["Which of the following results in integer type?","11.4F/3.2D","13.8F/4.6F","12/3","none","3"],
+["Which of the following is non-primitive data?","Char","long","object","short","3"],
+["Which of the following type is an exact representation of fractional values?","Char	","double ","byte","String","2"],
+["Boolean Data is used to test a particular condition i.e. true or false.<br>Which of the following is a correct representation?","boolean m=true ","boolean m=\'true\'","boolean m=\"true\"","none","1"],
+["The statement n += 4 is equivalent to:","++n	","n=n+4 ","n+1	","none","2"],
+["What will be the output of a & b  ?   int a\, b; a=10; b=a++;","10\,10","10\,11","11\,10","11\,11","3"],
+["What will be the output of a++ when int a = -1;","1	","-1	","0 	","none","3"],
+["If int a = 25\, b = 5\, c = 0; what value is stored in c? When c = a % b;","5.0	","5	","0 	","none","3"],
+["What is the result of the following in Java statement? int m=8;	m*=8;","8	","64 	","16	","88","2"],
+["int x = 5\, y = 10\, z = 11;  double c = x*y+z/2;  The value stored in c is:","55.0	","55.5	","55","None","1"],
+["int m\, p;	m = 5;	p = 0;	p = m-- + --m;The value of p  will be:","11	","10	","8 	","12","3"],
+["int a=7\, p=0\, q=0;	p= ++a + --a;	q -= p;   The output of q will be:","13	","14	","15	","-15","4"],
+["","","","","",""]];
+
+let fLen = fruits.length;
+let text="";
+</script>
+
+
+
+
+<p id="demo"></p>
+
+<script>
+if(j==0)
+ {
+ text =(j+1)+". "+fruits[j][0]+"<ol>"
+  for (let i = 1; i < 5; i++) 
+     {  text += "<li>" + fruits[j][i] + "</li>";}
+  text += "</ol>";
+  j++;
+ }
+text=text+"<p></p> <button onclick=\"myFunction()\">Click to Answer</button>"
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+<p id="demo1"></p>
+
+<script>
+function myFunction() {
+  var text1="Sorry Incorrect &#128532";
+  var FANS = prompt("Choose the correct answer 1/2/3/4","");
+
+   for(let c=0;c<1;c++)
+   {
+		
+     if(FANS==fruits[j-1][5]){n++;text1="Scoreline: Attempted:- "+j+"&#9997"+"   Correct:- "+n+"&#9989 "+"   Incorrect:- "+ (j-n)+"&#10060 "+"   Score:- "+n+"/"+j+" &#x1F603";}//text1="Excellent  Score "+n+"  j" +j+"  "+c};
+     
+    text =(j+1)+". "+fruits[j][0]+"<ol>"
+    for (let i = 1; i < 5; i++) 
+       {  text += "<li>" + fruits[j][i] + "</li>";}
+    text += "</ol>";
+    j++;
+	if(j==26 && n>20){text="<b>Thank You ! <br>You have successfully<br>completed the test<br>Very good!&#128522<br>please click on EXIT</b>"}
+	else if(j==26 && n<15){text="<b>Thank You ! <br>You have successfully<br>completed the test<br>Try to score better next time!&#128077<br>please click on EXIT</b>"}
+    text=text+"<p></p> <button onclick=\"myFunction()\">Click to Answer</button>"
+    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo1").innerHTML = text1
+   }
+}
+
+</script>
+
+<button id="close" onclick="window.top.close()">Exit</button>
+
+<style>
+h1{
+text-align:center;
+}
+body{
+background-color: #b8c6db;
+background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+}
+#demo{
+//position:absolute;
+//top:40%;
+//left:40%;
+background-color:#faebd7;
+border:solid green;
+border-radius:5px;
+}
+p{
+font-size:28px;
+font-family:Helvetica;
+}
+button{
+background-color:#03cae4;
+color:#fff;
+border:none;
+cursor:pointer;
+font-size:24px;
+}
+#close{
+background-color:red;
+font-size:20px;
+position:absolute;
+top:50px;
+right:10px;
+}
+</style>
+
+
+<p><FONT FACE ="ARIAL"SIZE=20 COLOR="red"><p align="left">
+<marquee scrollamount="10" bgcolor="white" height="60" direction="left" loop ="">
+Kids Educator ** Java MCQ Practice lesson (1) ** We offers Online / Offline Computer Application , Computer Science Coaching ** Mob 9830402885 ** Special Class for Basic , Java , Python, C++ ,Java Script ... **  Physics , Chemistry Practical class At Science Lab ** Mob 9830402885 ** Learn & Practice Swimming at Mini Pool ** Mob 9830402885** </marquee>
+</p></font>
+
+</body>
+</html>
